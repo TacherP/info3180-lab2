@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+ 
+{% block main %} 
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                   
+                    <img src= "{{ url_for('static', filename='Profile Picture.jpeg') }}" alt="Picture showing Montacher Pierre" class="rounded-circle mx-auto d-block"/>
+
+                    <h2 class="text-center">Montacher Pierre</h2>
+
+                    <p class="text-center">@tpierre</p>
+
+                    <p class="text-center">Kingston, Jamaica<br>Joined January, 2018</p>
+                
+                    <p class="text-center">I am a multi-talented young woman who is skilled in the use of various computer software. I do web and graphic designs on java, javascript, C and also python. Contact me if you would like to work together on a project.</p>
+                    
+                    <p>Profile created on: {{ "February, 2024" }}</p>
+
+                    <div class="d-flex justify-content-around mb-3">
+                        <div><strong>120</strong><br>Posts</div>
+                        <div><strong>289</strong><br>Following</div>
+                        <div><strong>521</strong><br>Followers</div>
+                    </div>
+        
+                    <div class="text-center">
+                        <button class="btn btn-primary">Follow</button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </body>
+</html>
+
+{% endblock %}
